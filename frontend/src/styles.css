@@ -65,6 +65,12 @@ button:hover { filter: brightness(1.05) }
 button.次 { background: transparent; border: 1px solid var(--线); color: var(--字); font-weight: 500 }
 button.次.亮片 { border-color: var(--焰); color: var(--焰); background: var(--焰弱) }
 button.水 { background: var(--水); color: #062028 }
+input, select {
+  background: var(--块); color: var(--字); border: 1px solid var(--线);
+  border-radius: 4px; padding: 0.36rem 0.5rem; font: inherit;
+}
+input:focus, select:focus { outline: none; border-color: var(--水) }
+label { color: var(--淡); font-size: 0.85rem; display: inline-flex; align-items: center; gap: 0.35rem }
 table { width: 100%; border-collapse: collapse; font-size: 0.85rem }
 th, td { border-bottom: 1px solid var(--线); padding: 0.48rem 0.35rem; text-align: left; vertical-align: top }
 th { color: var(--淡); font-weight: 500 }

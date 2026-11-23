@@ -15,8 +15,9 @@ def 加秒(ts: str, 秒: int) -> str:
     return 格式(解析(ts) + timedelta(seconds=秒))
 
 
-def 窗键(房间键: str, 窗起: str) -> str:
-    return f"{房间键}|{窗起}"
+def 窗键(房间键: str, 窗代: int, 窗起: str) -> str:
+    """窗键带窗代：换代后新旧窗键永不撞名，历史明确隔离。"""
+    return f"{房间键}|g{窗代}|{窗起}"
 
 
 def 对齐窗起(事件时: str, 窗长秒: int) -> str:
